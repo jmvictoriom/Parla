@@ -18,6 +18,9 @@ final class TranslatorViewModel: ObservableObject {
     @Published var geminiAvailable: Bool = false
     @Published var showPermissionAlert: Bool = false
     @Published var placeholderExample: String = "Bro, literal eso fue cringe..."
+    @Published var isAITranslation: Bool = false
+    @Published var isCooldown: Bool = false
+    @Published var cooldownRemaining: Double = 0
 
     // MARK: Dependencias
 
@@ -25,9 +28,11 @@ final class TranslatorViewModel: ObservableObject {
     private let speech = SpeechService()
     private var cancellables = Set<AnyCancellable>()
     private var translationTask: Task<Void, Never>?
-    private var debounceTask: Task<Void, Never>?
     private var speakingMonitorCancellable: AnyCancellable?
     private var recordingTimeoutTask: Task<Void, Never>?
+    private var cooldownTask: Task<Void, Never>?
+
+    private let cooldownDuration: Double = 3.0
 
     // MARK: Ciclo de vida
 
@@ -35,57 +40,80 @@ final class TranslatorViewModel: ObservableObject {
         checkGeminiAvailability()
     }
 
-    // MARK: - Traduccion
+    // MARK: - Traduccion local (en tiempo real mientras escribe)
 
-    func translate() {
+    func translateLocally() {
         let trimmed = inputText.trimmingCharacters(in: .whitespacesAndNewlines)
         guard !trimmed.isEmpty else {
             translatedText = ""
-            isTranslating = false
+            isAITranslation = false
             return
         }
 
+        translatedText = engine.translateLocal(trimmed, from: sourceGeneration, to: targetGeneration)
+        isAITranslation = false
+    }
+
+    // MARK: - Traduccion con IA (boton explicito)
+
+    func translateWithAI() {
+        let trimmed = inputText.trimmingCharacters(in: .whitespacesAndNewlines)
+        guard !trimmed.isEmpty else { return }
+        guard geminiAvailable, !isCooldown else { return }
+
         translationTask?.cancel()
+        isTranslating = true
 
-        if geminiAvailable {
-            // IA disponible: mostrar estado de carga y esperar a Gemini
-            isTranslating = true
-
-            // Fallback local inmediato para no dejar el output vacio
-            let localFallback = engine.translateLocal(trimmed, from: sourceGeneration, to: targetGeneration)
-            translatedText = localFallback
-
-            translationTask = Task { @MainActor in
-                do {
-                    let aiResult = try await engine.translateWithAI(
-                        trimmed, from: sourceGeneration, to: targetGeneration
-                    )
-                    guard !Task.isCancelled else {
-                        isTranslating = false
-                        return
+        translationTask = Task { @MainActor in
+            do {
+                let aiResult = try await engine.translateWithAI(
+                    trimmed, from: sourceGeneration, to: targetGeneration
+                )
+                guard !Task.isCancelled else {
+                    isTranslating = false
+                    return
+                }
+                withAnimation(.easeInOut(duration: 0.2)) {
+                    if !aiResult.isEmpty {
+                        translatedText = aiResult
+                        isAITranslation = true
                     }
-                    withAnimation(.easeInOut(duration: 0.2)) {
-                        // Solo usar resultado IA si no esta vacio
-                        if !aiResult.isEmpty {
-                            translatedText = aiResult
-                        }
-                        isTranslating = false
-                    }
-                } catch {
-                    guard !Task.isCancelled else {
-                        isTranslating = false
-                        return
-                    }
-                    // Fallback al diccionario local si Gemini falla
-                    withAnimation {
-                        translatedText = localFallback
-                        isTranslating = false
-                    }
+                    isTranslating = false
+                }
+            } catch {
+                guard !Task.isCancelled else {
+                    isTranslating = false
+                    return
+                }
+                withAnimation {
+                    isTranslating = false
                 }
             }
-        } else {
-            // Sin IA: usar diccionario local
-            translatedText = engine.translateLocal(trimmed, from: sourceGeneration, to: targetGeneration)
+
+            // Iniciar cooldown de 3s
+            startCooldown()
+        }
+    }
+
+    // MARK: - Cooldown
+
+    private func startCooldown() {
+        cooldownTask?.cancel()
+        isCooldown = true
+        cooldownRemaining = cooldownDuration
+
+        cooldownTask = Task { @MainActor in
+            let steps = 30 // actualizar cada 100ms
+            let stepDuration = cooldownDuration / Double(steps)
+
+            for i in 1...steps {
+                try? await Task.sleep(for: .milliseconds(Int(stepDuration * 1000)))
+                guard !Task.isCancelled else { return }
+                cooldownRemaining = cooldownDuration - (Double(i) * stepDuration)
+            }
+
+            isCooldown = false
+            cooldownRemaining = 0
         }
     }
 
@@ -97,7 +125,7 @@ final class TranslatorViewModel: ObservableObject {
             sourceGeneration = targetGeneration
             targetGeneration = temp
         }
-        translate()
+        translateLocally()
     }
 
     // MARK: - Grabacion de voz
@@ -131,6 +159,7 @@ final class TranslatorViewModel: ObservableObject {
         translatedText = ""
         translationTask?.cancel()
         isTranslating = false
+        isAITranslation = false
     }
 
     // MARK: - Cargar ejemplo
@@ -154,14 +183,9 @@ final class TranslatorViewModel: ObservableObject {
     }
 
     /// Llamado desde .onChange en la vista cuando cambia inputText.
-    /// Aplica debounce de 500ms antes de traducir.
+    /// Solo hace traduccion local (diccionario). La IA se activa con boton.
     func inputDidChange() {
-        debounceTask?.cancel()
-        debounceTask = Task { @MainActor in
-            try? await Task.sleep(for: .milliseconds(500))
-            guard !Task.isCancelled else { return }
-            translate()
-        }
+        translateLocally()
     }
 
     private func startRecording() {

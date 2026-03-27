@@ -44,10 +44,10 @@ struct TranslatorView: View {
             viewModel.inputDidChange()
         }
         .onChange(of: viewModel.sourceGeneration) {
-            viewModel.translate()
+            viewModel.translateLocally()
         }
         .onChange(of: viewModel.targetGeneration) {
-            viewModel.translate()
+            viewModel.translateLocally()
         }
         .background {
             Color(uiColor: .systemGroupedBackground)

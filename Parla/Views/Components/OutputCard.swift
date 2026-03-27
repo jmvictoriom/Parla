@@ -19,25 +19,19 @@ struct OutputCard: View {
 
                 Spacer()
 
-                // Indicador de estado Gemini
-                if viewModel.isTranslating {
-                    HStack(spacing: 4) {
-                        ProgressView()
-                            .controlSize(.mini)
-                        Text("IA traduciendo...")
+                // Indicador de fuente de traduccion
+                if !viewModel.translatedText.isEmpty {
+                    if viewModel.isAITranslation {
+                        Label("IA", systemImage: "brain")
                             .font(.caption2)
+                            .foregroundStyle(AppTheme.accent.opacity(0.7))
+                            .transition(.opacity)
+                    } else {
+                        Label("Local", systemImage: "book.closed")
+                            .font(.caption2)
+                            .foregroundStyle(AppTheme.secondaryText)
+                            .transition(.opacity)
                     }
-                    .foregroundStyle(AppTheme.accent)
-                    .transition(.opacity)
-                } else if viewModel.geminiAvailable && !viewModel.translatedText.isEmpty {
-                    Label("IA", systemImage: "brain")
-                        .font(.caption2)
-                        .foregroundStyle(AppTheme.accent.opacity(0.7))
-                        .transition(.opacity)
-                } else if !viewModel.geminiAvailable {
-                    Label("Local", systemImage: "book.closed")
-                        .font(.caption2)
-                        .foregroundStyle(AppTheme.secondaryText)
                 }
             }
             .padding(.bottom, 4)
