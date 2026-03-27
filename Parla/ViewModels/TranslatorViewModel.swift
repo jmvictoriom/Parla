@@ -18,6 +18,7 @@ final class TranslatorViewModel: ObservableObject {
     @Published var geminiAvailable: Bool = false
     @Published var showPermissionAlert: Bool = false
     @Published var placeholderExample: String = "Bro, literal eso fue cringe..."
+    @Published var exaggerationLevel: ExaggerationLevel = .normal
     @Published var isAITranslation: Bool = false
     @Published var isCooldown: Bool = false
     @Published var cooldownRemaining: Double = 0
@@ -67,7 +68,8 @@ final class TranslatorViewModel: ObservableObject {
         translationTask = Task { @MainActor in
             do {
                 let aiResult = try await engine.translateWithAI(
-                    trimmed, from: sourceGeneration, to: targetGeneration
+                    trimmed, from: sourceGeneration, to: targetGeneration,
+                    exaggeration: exaggerationLevel
                 )
                 guard !Task.isCancelled else {
                     isTranslating = false

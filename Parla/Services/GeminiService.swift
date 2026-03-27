@@ -41,13 +41,15 @@ final class GeminiService: Sendable {
     static func translate(
         _ text: String,
         from source: Generation,
-        to target: Generation
+        to target: Generation,
+        exaggeration: ExaggerationLevel = .normal
     ) async throws -> String {
         guard let apiKey else {
             throw TranslationError.missingAPIKey
         }
 
         let prompt = "[\(source.rawValue) → \(target.rawValue)] \(text)"
+        let fullSystemPrompt = systemPrompt + "\n\n" + exaggeration.promptInstruction
 
         guard let url = URL(string: "\(endpoint)/\(model):generateContent?key=\(apiKey)") else {
             throw TranslationError.invalidURL
@@ -58,10 +60,10 @@ final class GeminiService: Sendable {
                 ["parts": [["text": prompt]]]
             ],
             "systemInstruction": [
-                "parts": [["text": systemPrompt]]
+                "parts": [["text": fullSystemPrompt]]
             ],
             "generationConfig": [
-                "temperature": 0.6,
+                "temperature": exaggeration.temperature,
                 "topP": 0.9,
                 "maxOutputTokens": 256
             ]

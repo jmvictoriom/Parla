@@ -17,6 +17,8 @@ struct TranslatorView: View {
                 )
                 InputCard(viewModel: viewModel)
 
+                exaggerationSelector
+
                 if viewModel.isRecording {
                     WaveformView(isActive: true, color: .red)
                         .transition(.opacity.combined(with: .scale(scale: 0.8)))
@@ -74,6 +76,49 @@ struct TranslatorView: View {
                 .font(.caption)
                 .foregroundStyle(AppTheme.secondaryText)
         }
+    }
+
+    private var exaggerationSelector: some View {
+        HStack(spacing: 6) {
+            ForEach(ExaggerationLevel.allCases) { level in
+                Button {
+                    withAnimation(.easeInOut(duration: 0.2)) {
+                        viewModel.exaggerationLevel = level
+                    }
+                } label: {
+                    HStack(spacing: 4) {
+                        Text(level.emoji)
+                            .font(.caption2)
+                        Text(level.rawValue)
+                            .font(.caption)
+                            .fontWeight(viewModel.exaggerationLevel == level ? .bold : .regular)
+                    }
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(
+                        viewModel.exaggerationLevel == level
+                            ? AppTheme.accent.opacity(0.15)
+                            : Color.clear
+                    )
+                    .foregroundStyle(
+                        viewModel.exaggerationLevel == level
+                            ? AppTheme.accent
+                            : AppTheme.secondaryText
+                    )
+                    .clipShape(Capsule())
+                    .overlay(
+                        Capsule()
+                            .stroke(
+                                viewModel.exaggerationLevel == level
+                                    ? AppTheme.accent.opacity(0.3)
+                                    : AppTheme.secondaryText.opacity(0.2),
+                                lineWidth: 1
+                            )
+                    )
+                }
+            }
+        }
+        .padding(.vertical, 2)
     }
 
     private var footer: some View {

@@ -17,20 +17,21 @@ final class TranslationEngine: Sendable {
     func translateWithAI(
         _ text: String,
         from source: Generation,
-        to target: Generation
+        to target: Generation,
+        exaggeration: ExaggerationLevel = .normal
     ) async throws -> String {
         guard source != target, !text.isEmpty else { return text }
 
-        // 1. Buscar en cache
-        if let cached = await cache.get(text: text, from: source, to: target) {
+        // 1. Buscar en cache (solo para nivel normal, exageraciones no se cachean)
+        if exaggeration == .normal, let cached = await cache.get(text: text, from: source, to: target) {
             return cached
         }
 
         // 2. Llamar a Gemini
-        let result = try await GeminiService.translate(text, from: source, to: target)
+        let result = try await GeminiService.translate(text, from: source, to: target, exaggeration: exaggeration)
 
-        // 3. Guardar en cache si la respuesta no esta vacia
-        if !result.isEmpty {
+        // 3. Guardar en cache si es nivel normal y la respuesta no esta vacia
+        if exaggeration == .normal, !result.isEmpty {
             await cache.set(text: text, from: source, to: target, result: result)
         }
 
