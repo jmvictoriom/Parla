@@ -21,11 +21,11 @@ enum ExaggerationLevel: String, CaseIterable, Identifiable {
     var promptInstruction: String {
         switch self {
         case .suave:
-            return "NIVEL DE EXAGERACION: SUAVE. Traduce de forma natural y sutil. Usa equivalentes generacionales pero sin forzar estereotipos. El resultado debe sonar como alguien que habla asi naturalmente, sin exagerar."
+            return "NIVEL DE EXAGERACION: SUAVE. Traduce de forma natural y sutil. Usa equivalentes generacionales pero sin forzar. El resultado debe sonar como alguien que habla asi naturalmente."
         case .normal:
             return "NIVEL DE EXAGERACION: NORMAL. Traduce con el nivel estandar de jerga generacional. Usa las expresiones tipicas de cada generacion de forma natural."
         case .extremo:
-            return "NIVEL DE EXAGERACION: EXTREMO. Exagera al maximo los estereotipos generacionales. Un boomer debe sonar como el abuelo mas castizo del pueblo, con refranes, \"madre del amor hermoso\", \"fijate tu\", \"en mis tiempos\". Un Gen Z debe sonar como el tiktoker mas intenso: lleno de anglicismos, \"bro\" en cada frase, \"no cap fr fr\", \"literally dead\". Cuanto mas exagerado mejor."
+            return "NIVEL DE EXAGERACION: EXTREMO. Exagera al maximo. Un boomer debe sonar como el adulto mas normal y aburrido posible: todo literal, sin gracia, explicando todo con detalle. Un Gen Z debe sonar como el tiktoker mas intenso del mundo: \"bro\" en CADA frase, \"literal\" como muletilla constante, \"six seven\", \"no cap fr fr ngl\", \"es god\", anglicismos en cada palabra posible, fragmentar frases. Cuanto mas exagerado mejor."
         }
     }
 
@@ -77,8 +77,8 @@ enum Generation: String, CaseIterable, Identifiable, Codable {
 
     var tagline: String {
         switch self {
-        case .newGen: return "Slay, bro, no cap..."
-        case .boomer: return "Estupendo, fenomenal..."
+        case .newGen: return "Bro, literal, six seven..."
+        case .boomer: return "Tio, mola, genial..."
         }
     }
 }

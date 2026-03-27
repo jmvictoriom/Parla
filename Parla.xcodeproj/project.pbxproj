@@ -42,7 +42,7 @@
 		3DDF538600C891EED1AF574B /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Secrets.plist; sourceTree = "<group>"; };
 		52A3956DC3DE3A046D8A485D /* OutputCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputCard.swift; sourceTree = "<group>"; };
 		5531835F5CEAFB536AB414F1 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
-		565D533E2B81F1F57E6AC2FE /* Parla.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Parla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		565D533E2B81F1F57E6AC2FE /* Parla.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parla.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B01FBC695C424042F7DDDCD /* PrecachedTranslations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PrecachedTranslations.json; sourceTree = "<group>"; };
 		71BE435D5CC885C220E64075 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		7425A46C7B6359F019AD2F30 /* SlangDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlangDictionary.swift; sourceTree = "<group>"; };
@@ -202,8 +202,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 2600;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = AB82A12A6157517AE84C3CC1 /* Build configuration list for PBXProject "Parla" */;
 			developmentRegion = en;
@@ -398,12 +396,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
 				INFOPLIST_FILE = Parla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parla.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesusvictorio.parla.app;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -415,12 +414,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 6L5VDX4RR3;
 				INFOPLIST_FILE = Parla/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.parla.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jesusvictorio.parla.app;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

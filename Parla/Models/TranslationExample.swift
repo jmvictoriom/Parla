@@ -7,27 +7,27 @@ struct TranslationExample: Identifiable {
     static let samples: [TranslationExample] = [
         TranslationExample(sentences: [
             .newGen: "Bro, literal ese pibe tiene un rizz god",
-            .boomer: "Oye, de verdad ese chico tiene un encanto estupendo"
+            .boomer: "Tio, de verdad ese chaval tiene una labia increible"
         ]),
         TranslationExample(sentences: [
             .newGen: "El salseo fue cringe total. La funaron por flexear",
-            .boomer: "El cotilleo fue bochornoso. La denunciaron por presumir"
+            .boomer: "El cotilleo fue super penoso. La señalaron por ir presumiendo"
         ]),
         TranslationExample(sentences: [
             .newGen: "Mi crush me ghosteo y ahora estoy en mi villain era",
-            .boomer: "Mi amor platonico me dejo de hablar y estoy en mi fase egoista"
+            .boomer: "La tia que me gustaba paso de mi y ahora estoy en plan egoista"
         ]),
         TranslationExample(sentences: [
-            .newGen: "No cap, esa bestie tiene flow. Devoro con ese fit",
-            .boomer: "De verdad, esa amiga del alma tiene elegancia. Arraso con ese atuendo"
+            .newGen: "No cap fr fr, esa bestie tiene flow. Devoro con ese fit",
+            .boomer: "De verdad, su mejor amiga tiene un estilazo. Le quedo increible la ropa"
         ]),
         TranslationExample(sentences: [
-            .newGen: "Ese NPC es un simp total, caught in 4K stalkeando",
-            .boomer: "Ese borreguito es un baboso total, pillado con las manos en la masa espiando"
+            .newGen: "Bro ese NPC es un simp total, caught in 4K stalkeando ngl",
+            .boomer: "Tio ese borreguito esta pillado total, le pillaron cotilleando el perfil"
         ]),
         TranslationExample(sentences: [
-            .newGen: "Todo Gucci, en plan six seven. Periodt",
-            .boomer: "Todo en orden, o sea coser y cantar. Asunto zanjado"
+            .newGen: "Todo Gucci bro, en plan six seven. Periodt",
+            .boomer: "Todo bien tio, o sea facilisimo. Punto"
         ])
     ]
 }

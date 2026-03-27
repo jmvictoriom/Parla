@@ -67,51 +67,51 @@ extension SlangDictionary {
 
             SlangEntry(concept: "cool", mappings: [
                 .newGen: ["god", "slay", "basado"],
-                .boomer: ["estupendo", "fenomenal", "cojonudo"]
+                .boomer: ["increible", "brutal", "genial"]
             ]),
             SlangEntry(concept: "amazing", mappings: [
                 .newGen: ["devorar", "petarlo"],
-                .boomer: ["formidable", "barbaro", "increible"]
+                .boomer: ["arrasar", "estar increible"]
             ]),
             SlangEntry(concept: "perfect", mappings: [
                 .newGen: ["fantasia", "nashe"],
-                .boomer: ["impecable", "perfecto", "redondo"]
+                .boomer: ["perfecto", "genial"]
             ]),
             SlangEntry(concept: "very_good", mappings: [
                 .newGen: ["buenardo", "PEC"],
-                .boomer: ["magnifico", "esplendido"]
+                .boomer: ["buenisimo", "de lo mejor"]
             ]),
             SlangEntry(concept: "attractive", mappings: [
                 .newGen: ["fachero", "face card"],
-                .boomer: ["bien parecido", "apuesto", "guapeton"]
+                .boomer: ["esta muy bueno", "es guapo"]
             ]),
             SlangEntry(concept: "charisma", mappings: [
                 .newGen: ["rizz"],
-                .boomer: ["encanto", "carisma", "don de gentes"]
+                .boomer: ["labia", "encanto"]
             ]),
             SlangEntry(concept: "style", mappings: [
                 .newGen: ["flow"],
-                .boomer: ["elegancia", "porte", "distincion"]
+                .boomer: ["estilo", "rollo"]
             ]),
             SlangEntry(concept: "transformation", mappings: [
                 .newGen: ["glow up"],
-                .boomer: ["cambio radical", "mejora notable"]
+                .boomer: ["menudo cambio", "vaya cambiazo"]
             ]),
             SlangEntry(concept: "easy", mappings: [
                 .newGen: ["six seven", "easy"],
-                .boomer: ["coser y cantar", "pan comido"]
+                .boomer: ["facilisimo", "pan comido"]
             ]),
             SlangEntry(concept: "true_facts", mappings: [
                 .newGen: ["factos", "facts"],
-                .boomer: ["efectivamente", "desde luego", "asi es"]
+                .boomer: ["totalmente", "exacto", "tal cual"]
             ]),
             SlangEntry(concept: "seriously", mappings: [
                 .newGen: ["no cap"],
-                .boomer: ["de verdad", "te lo digo yo"]
+                .boomer: ["de verdad", "en serio"]
             ]),
             SlangEntry(concept: "honest", mappings: [
                 .newGen: ["basado"],
-                .boomer: ["franco", "honrado", "sincero"]
+                .boomer: ["sin filtros", "va de frente"]
             ]),
 
             // ============================
@@ -120,35 +120,35 @@ extension SlangDictionary {
 
             SlangEntry(concept: "cringe", mappings: [
                 .newGen: ["cringe"],
-                .boomer: ["bochornoso", "lamentable", "verguenza ajena"]
+                .boomer: ["verguenza ajena", "penoso"]
             ]),
             SlangEntry(concept: "bad", mappings: [
                 .newGen: ["malardo"],
-                .boomer: ["espantoso", "horrible", "pesimo"]
+                .boomer: ["horrible", "pesimo", "una mierda"]
             ]),
             SlangEntry(concept: "failed", mappings: [
                 .newGen: ["flopear"],
-                .boomer: ["fracasar", "fallar"]
+                .boomer: ["fracasar", "salir mal"]
             ]),
             SlangEntry(concept: "embarrassing", mappings: [
                 .newGen: ["lache"],
-                .boomer: ["bochorno", "sonrojo", "verguenza"]
+                .boomer: ["que corte", "que verguenza"]
             ]),
             SlangEntry(concept: "suspicious", mappings: [
                 .newGen: ["sus"],
-                .boomer: ["sospechoso", "turbio", "raro"]
+                .boomer: ["raro", "sospechoso", "no me fio"]
             ]),
             SlangEntry(concept: "outdated", mappings: [
                 .newGen: ["cheugy", "charca"],
-                .boomer: ["pasado de moda", "trasnochado", "anticuado"]
+                .boomer: ["pasado de moda", "desfasado"]
             ]),
             SlangEntry(concept: "mediocre", mappings: [
                 .newGen: ["mid"],
-                .boomer: ["mediocre", "del monton", "tirando a malo"]
+                .boomer: ["mediocre", "normalito"]
             ]),
             SlangEntry(concept: "confused", mappings: [
                 .newGen: ["bugueado"],
-                .boomer: ["aturdido", "confuso", "despistado"]
+                .boomer: ["empanado", "ido", "no se entera"]
             ]),
 
             // ============================
@@ -157,55 +157,55 @@ extension SlangDictionary {
 
             SlangEntry(concept: "friend", mappings: [
                 .newGen: ["bro"],
-                .boomer: ["amigo", "companero", "oye"]
+                .boomer: ["tio", "oye", "colega"]
             ]),
             SlangEntry(concept: "best_friend", mappings: [
                 .newGen: ["bestie"],
-                .boomer: ["amiga del alma", "inseparable"]
+                .boomer: ["mi mejor amiga", "mi amiga de siempre"]
             ]),
             SlangEntry(concept: "buddy", mappings: [
                 .newGen: ["pana", "neri"],
-                .boomer: ["companero", "compadre"]
+                .boomer: ["colega", "compi"]
             ]),
             SlangEntry(concept: "genius", mappings: [
                 .newGen: ["crack"],
-                .boomer: ["fenomeno", "genio", "un hacha"]
+                .boomer: ["crack", "genio"]
             ]),
             SlangEntry(concept: "newbie", mappings: [
                 .newGen: ["noob"],
-                .boomer: ["novato", "inexperto", "primerizo"]
+                .boomer: ["novato", "no tiene ni idea"]
             ]),
             SlangEntry(concept: "showoff_person", mappings: [
                 .newGen: ["flexero"],
-                .boomer: ["presumido", "vanidoso", "fantasma"]
+                .boomer: ["presumido", "chulo"]
             ]),
             SlangEntry(concept: "critic", mappings: [
                 .newGen: ["hater"],
-                .boomer: ["envidioso", "criticon", "resentido"]
+                .boomer: ["envidioso", "toxico"]
             ]),
             SlangEntry(concept: "obsessive_fan", mappings: [
                 .newGen: ["stan"],
-                .boomer: ["admirador ferviente", "devoto", "incondicional"]
+                .boomer: ["superfan", "obsesionado"]
             ]),
             SlangEntry(concept: "tryhard_person", mappings: [
                 .newGen: ["tryhard"],
-                .boomer: ["empollón", "demasiado intenso"]
+                .boomer: ["intenso", "se esfuerza demasiado"]
             ]),
             SlangEntry(concept: "loner", mappings: [
                 .newGen: ["sigma"],
-                .boomer: ["lobo solitario", "ermitano"]
+                .boomer: ["va a su bola", "lobo solitario"]
             ]),
             SlangEntry(concept: "mindless_person", mappings: [
                 .newGen: ["NPC"],
-                .boomer: ["borreguito", "persona sin criterio"]
+                .boomer: ["borreguito", "no tiene personalidad"]
             ]),
             SlangEntry(concept: "confident_man", mappings: [
                 .newGen: ["chad"],
-                .boomer: ["todo un hombre", "un senor"]
+                .boomer: ["es un maquina", "un tio con todas las letras"]
             ]),
             SlangEntry(concept: "pick_me_person", mappings: [
                 .newGen: ["pick me"],
-                .boomer: ["zalamera", "aduladora", "pelota"]
+                .boomer: ["va de especial", "busca atencion"]
             ]),
 
             // ============================
@@ -214,39 +214,39 @@ extension SlangDictionary {
 
             SlangEntry(concept: "crush", mappings: [
                 .newGen: ["crush"],
-                .boomer: ["amor platonico", "flechazo"]
+                .boomer: ["la persona que me gusta", "me mola"]
             ]),
             SlangEntry(concept: "situationship", mappings: [
                 .newGen: ["situationship"],
-                .boomer: ["amigos especiales", "relacion sin definir"]
+                .boomer: ["un rollo raro", "no somos nada oficial"]
             ]),
             SlangEntry(concept: "early_dating", mappings: [
                 .newGen: ["talking stage"],
-                .boomer: ["cortejo", "conocerse"]
+                .boomer: ["estamos tonteando", "estamos en ello"]
             ]),
             SlangEntry(concept: "secret_affair", mappings: [
                 .newGen: ["sneaky link"],
-                .boomer: ["ligue secreto", "aventurilla"]
+                .boomer: ["lio secreto", "rollo a escondidas"]
             ]),
             SlangEntry(concept: "toxic_partner", mappings: [
                 .newGen: ["toxico", "toxica"],
-                .boomer: ["dominante", "posesivo", "asfixiante"]
+                .boomer: ["toxico", "controlador"]
             ]),
             SlangEntry(concept: "devoted_lover", mappings: [
                 .newGen: ["simp"],
-                .boomer: ["baboso", "rendido", "sometido"]
+                .boomer: ["esta pillado", "esta colgado"]
             ]),
             SlangEntry(concept: "sudden_rejection", mappings: [
                 .newGen: ["ick"],
-                .boomer: ["aversion", "repugnancia", "rechazo"]
+                .boomer: ["me da rechazo", "se me quitaron las ganas"]
             ]),
             SlangEntry(concept: "warning_sign", mappings: [
                 .newGen: ["red flag"],
-                .boomer: ["mala espina", "senal de alarma"]
+                .boomer: ["mala senal", "no pinta bien"]
             ]),
             SlangEntry(concept: "good_sign", mappings: [
                 .newGen: ["green flag"],
-                .boomer: ["buena senal", "prometedor"]
+                .boomer: ["buena senal", "eso mola"]
             ]),
 
             // ============================
@@ -255,79 +255,79 @@ extension SlangDictionary {
 
             SlangEntry(concept: "show_off", mappings: [
                 .newGen: ["flexear"],
-                .boomer: ["presumir", "pavonearse"]
+                .boomer: ["presumir", "fardar"]
             ]),
             SlangEntry(concept: "showing_off", mappings: [
                 .newGen: ["flexeando"],
-                .boomer: ["presumiendo", "pavoneandose"]
+                .boomer: ["presumiendo", "fardando"]
             ]),
             SlangEntry(concept: "ignore", mappings: [
                 .newGen: ["ghostear"],
-                .boomer: ["dejar plantado", "dejar de hablar"]
+                .boomer: ["dejar de hablar", "ignorar"]
             ]),
             SlangEntry(concept: "ignoring", mappings: [
                 .newGen: ["ghosteando"],
-                .boomer: ["dejando de lado", "ignorando"]
+                .boomer: ["ignorando", "pasando de"]
             ]),
             SlangEntry(concept: "ignored_past", mappings: [
                 .newGen: ["ghosteo"],
-                .boomer: ["dejo de hablar a", "ignoro"]
+                .boomer: ["paso de mi", "me ignoro"]
             ]),
             SlangEntry(concept: "spy_on", mappings: [
                 .newGen: ["stalkear"],
-                .boomer: ["espiar", "curiosear", "fisgonear"]
+                .boomer: ["espiar", "cotillear el perfil"]
             ]),
             SlangEntry(concept: "stalking", mappings: [
                 .newGen: ["stalkeando"],
-                .boomer: ["espiando", "curioseando"]
+                .boomer: ["espiando", "cotilleando"]
             ]),
             SlangEntry(concept: "provoke", mappings: [
                 .newGen: ["trolear"],
-                .boomer: ["provocar", "molestar", "chinchar"]
+                .boomer: ["provocar", "vacillar"]
             ]),
             SlangEntry(concept: "ship", mappings: [
                 .newGen: ["shippear"],
-                .boomer: ["casar", "emparejar"]
+                .boomer: ["emparejar", "juntar"]
             ]),
             SlangEntry(concept: "cancel_publicly", mappings: [
                 .newGen: ["funar", "cancelar"],
-                .boomer: ["poner en evidencia", "denunciar"]
+                .boomer: ["señalar", "denunciar"]
             ]),
             SlangEntry(concept: "cancelled_past", mappings: [
                 .newGen: ["funaron", "cancelaron"],
-                .boomer: ["denunciaron", "pusieron en evidencia"]
+                .boomer: ["la señalaron", "la denunciaron"]
             ]),
             SlangEntry(concept: "block", mappings: [
                 .newGen: ["banear"],
-                .boomer: ["excluir", "vetar", "apartar"]
+                .boomer: ["bloquear", "echar"]
             ]),
             SlangEntry(concept: "boast", mappings: [
                 .newGen: ["frontear"],
-                .boomer: ["pavonearse", "darse aires"]
+                .boomer: ["ir de chulo", "darse aires"]
             ]),
             SlangEntry(concept: "dance", mappings: [
                 .newGen: ["perrear"],
-                .boomer: ["bailar", "mover el esqueleto"]
+                .boomer: ["bailar reggaeton", "perrear"]
             ]),
             SlangEntry(concept: "appear_suddenly", mappings: [
                 .newGen: ["spawnear"],
-                .boomer: ["aparecer de golpe", "presentarse"]
+                .boomer: ["aparecer de la nada", "presentarse"]
             ]),
             SlangEntry(concept: "carry_team", mappings: [
                 .newGen: ["carrilear", "carrear"],
-                .boomer: ["llevar la carga", "tirar del carro"]
+                .boomer: ["llevar el peso", "tirar del carro"]
             ]),
             SlangEntry(concept: "accumulate", mappings: [
                 .newGen: ["farmear aura"],
-                .boomer: ["labrarse reputacion", "ganar prestigio"]
+                .boomer: ["hacerse un nombre", "ganar reputacion"]
             ]),
             SlangEntry(concept: "expose_data", mappings: [
                 .newGen: ["doxear"],
-                .boomer: ["sacar los trapos", "airear"]
+                .boomer: ["airear", "sacar los trapos"]
             ]),
             SlangEntry(concept: "succeed_greatly", mappings: [
                 .newGen: ["la rompe", "devoro"],
-                .boomer: ["arraso", "brillo", "se lucio"]
+                .boomer: ["la esta rompiendo", "se lucio"]
             ]),
 
             // ============================
@@ -336,43 +336,43 @@ extension SlangDictionary {
 
             SlangEntry(concept: "literally", mappings: [
                 .newGen: ["literal"],
-                .boomer: ["de verdad", "fijate tu"]
+                .boomer: ["de verdad", "en serio"]
             ]),
             SlangEntry(concept: "filler_word", mappings: [
                 .newGen: ["en plan"],
-                .boomer: ["o sea", "digamos", "es decir"]
+                .boomer: ["o sea", "tipo"]
             ]),
             SlangEntry(concept: "end_of_discussion", mappings: [
                 .newGen: ["periodt", "y punto"],
-                .boomer: ["asunto zanjado", "no hay mas que hablar"]
+                .boomer: ["punto", "se acabo"]
             ]),
             SlangEntry(concept: "too_long", mappings: [
                 .newGen: ["mucho texto"],
-                .boomer: ["no te enrolles", "ve al grano"]
+                .boomer: ["ve al grano", "no te enrolles"]
             ]),
             SlangEntry(concept: "gossip", mappings: [
                 .newGen: ["salseo", "tea"],
-                .boomer: ["cotilleo", "chismorreo", "comidilla"]
+                .boomer: ["cotilleo", "drama"]
             ]),
             SlangEntry(concept: "tell_gossip", mappings: [
                 .newGen: ["spill the tea"],
-                .boomer: ["cuentamelo todo", "desembucha"]
+                .boomer: ["cuenta", "desembucha"]
             ]),
             SlangEntry(concept: "lack_context", mappings: [
                 .newGen: ["te falta lore"],
-                .boomer: ["no sabes ni la mitad", "te falta informacion"]
+                .boomer: ["no sabes ni la mitad", "no tienes ni idea"]
             ]),
             SlangEntry(concept: "has_backstory", mappings: [
                 .newGen: ["tiene lore"],
-                .boomer: ["tiene su aquel", "hay mucho detras"]
+                .boomer: ["tiene historia", "hay mucho detras"]
             ]),
             SlangEntry(concept: "dont_care", mappings: [
                 .newGen: ["y la queso"],
-                .boomer: ["alla ellos", "no me importa"]
+                .boomer: ["me da igual", "paso"]
             ]),
             SlangEntry(concept: "all_good", mappings: [
                 .newGen: ["todo Gucci"],
-                .boomer: ["todo en orden", "todo perfecto"]
+                .boomer: ["todo bien", "todo guay"]
             ]),
 
             // ============================
@@ -381,39 +381,39 @@ extension SlangDictionary {
 
             SlangEntry(concept: "excitement", mappings: [
                 .newGen: ["hype"],
-                .boomer: ["expectacion", "emocion", "nervios buenos"]
+                .boomer: ["hype", "emocion", "ganas locas"]
             ]),
             SlangEntry(concept: "mood_state", mappings: [
                 .newGen: ["mood"],
-                .boomer: ["estado de animo", "humor"]
+                .boomer: ["mood", "eso me representa"]
             ]),
             SlangEntry(concept: "atmosphere", mappings: [
                 .newGen: ["vibe", "vibra"],
-                .boomer: ["ambiente", "atmosfera"]
+                .boomer: ["rollo", "ambiente"]
             ]),
             SlangEntry(concept: "shocked", mappings: [
                 .newGen: ["flipando"],
-                .boomer: ["estupefacto", "atonito", "boquiabierto"]
+                .boomer: ["alucinando", "flipando"]
             ]),
             SlangEntry(concept: "stressed", mappings: [
                 .newGen: ["rayado", "rayada"],
-                .boomer: ["angustiado", "preocupado"]
+                .boomer: ["agobiado", "rallado"]
             ]),
             SlangEntry(concept: "offended", mappings: [
                 .newGen: ["triggered"],
-                .boomer: ["indignado", "susceptible", "ofendido"]
+                .boomer: ["ofendido", "le ha sentado fatal"]
             ]),
             SlangEntry(concept: "fear_missing_out", mappings: [
                 .newGen: ["FOMO"],
-                .boomer: ["miedo a perdermelo", "que no me lo pierda"]
+                .boomer: ["miedo a perdermelo"]
             ]),
             SlangEntry(concept: "euphoric", mappings: [
                 .newGen: ["living", "estoy living"],
-                .boomer: ["radiante", "rebosante de alegria"]
+                .boomer: ["contentisimo", "eufórico"]
             ]),
             SlangEntry(concept: "mental_saturation", mappings: [
                 .newGen: ["brainrot"],
-                .boomer: ["embotamiento", "saturacion mental"]
+                .boomer: ["el cerebro derretido", "saturado de internet"]
             ]),
 
             // ============================
@@ -422,55 +422,55 @@ extension SlangDictionary {
 
             SlangEntry(concept: "turning_point", mappings: [
                 .newGen: ["evento canonico"],
-                .boomer: ["momento decisivo", "punto de inflexion"]
+                .boomer: ["momento clave", "punto de inflexion"]
             ]),
             SlangEntry(concept: "plot_twist", mappings: [
                 .newGen: ["plot twist"],
-                .boomer: ["giro dramatico", "sorpresa mayuscula"]
+                .boomer: ["menudo giro", "vaya giro"]
             ]),
             SlangEntry(concept: "nailed_it", mappings: [
                 .newGen: ["understood the assignment"],
-                .boomer: ["dio en el clavo", "se lucio"]
+                .boomer: ["lo bordo", "lo hizo perfecto"]
             ]),
             SlangEntry(concept: "caught_red_handed", mappings: [
                 .newGen: ["caught in 4K"],
-                .boomer: ["pillado con las manos en la masa", "cogido in fraganti"]
+                .boomer: ["pillado con las manos en la masa"]
             ]),
             SlangEntry(concept: "conflict", mappings: [
                 .newGen: ["beef"],
-                .boomer: ["disputa", "bronca", "rencilla"]
+                .boomer: ["bronca", "lio", "pique"]
             ]),
             SlangEntry(concept: "subtle_criticism", mappings: [
                 .newGen: ["shade"],
-                .boomer: ["indirecta", "pulla", "comentario malicioso"]
+                .boomer: ["indirecta", "pullita"]
             ]),
             SlangEntry(concept: "protagonist_energy", mappings: [
                 .newGen: ["main character"],
-                .boomer: ["el centro del universo", "la estrella"]
+                .boomer: ["se cree el protagonista", "va de estrella"]
             ]),
             SlangEntry(concept: "selfish_phase", mappings: [
                 .newGen: ["villain era"],
-                .boomer: ["fase egoista", "mala temporada"]
+                .boomer: ["fase egoista", "paso de todo"]
             ]),
             SlangEntry(concept: "personal_phase", mappings: [
                 .newGen: ["mi era"],
-                .boomer: ["mi epoca", "mi momento"]
+                .boomer: ["mi momento", "mi fase"]
             ]),
             SlangEntry(concept: "random_thing", mappings: [
                 .newGen: ["random"],
-                .boomer: ["de la nada", "inesperado"]
+                .boomer: ["aleatorio", "de la nada"]
             ]),
             SlangEntry(concept: "visual_style", mappings: [
                 .newGen: ["aesthetic"],
-                .boomer: ["apariencia", "aspecto", "estilo"]
+                .boomer: ["tiene un rollo visual", "estilo cuidado"]
             ]),
             SlangEntry(concept: "faking_lifestyle", mappings: [
                 .newGen: ["postureo"],
-                .boomer: ["guardar las apariencias", "poner buena cara"]
+                .boomer: ["pura fachada", "postureo"]
             ]),
             SlangEntry(concept: "nepotism", mappings: [
                 .newGen: ["nepobaby"],
-                .boomer: ["enchufado", "colocado a dedo"]
+                .boomer: ["enchufado", "hijo de papa"]
             ]),
 
             // ============================
@@ -479,31 +479,31 @@ extension SlangDictionary {
 
             SlangEntry(concept: "condolences_ironic", mappings: [
                 .newGen: ["F", "F en el chat"],
-                .boomer: ["que mala suerte", "vaya faena"]
+                .boomer: ["vaya faena", "que mala suerte"]
             ]),
             SlangEntry(concept: "good_game", mappings: [
                 .newGen: ["GG"],
-                .boomer: ["enhorabuena", "bravo", "chapeau"]
+                .boomer: ["bien jugado", "enhorabuena"]
             ]),
             SlangEntry(concept: "just_kidding", mappings: [
                 .newGen: ["ahre"],
-                .boomer: ["es broma", "cachondeo"]
+                .boomer: ["es broma", "de broma"]
             ]),
             SlangEntry(concept: "sleep", mappings: [
                 .newGen: ["mimir"],
-                .boomer: ["dormir", "descansar"]
+                .boomer: ["dormir", "irse a dormir"]
             ]),
             SlangEntry(concept: "useful", mappings: [
                 .newGen: ["messirve"],
-                .boomer: ["me viene bien", "conveniente"]
+                .boomer: ["me vale", "me viene genial"]
             ]),
             SlangEntry(concept: "overpowered", mappings: [
                 .newGen: ["chetado"],
-                .boomer: ["invencible", "imparable"]
+                .boomer: ["invencible", "imbatible"]
             ]),
             SlangEntry(concept: "ratio_beaten", mappings: [
                 .newGen: ["ratio"],
-                .boomer: ["superado", "desacreditado"]
+                .boomer: ["le han humillado", "superado"]
             ]),
 
             // ============================
@@ -512,11 +512,11 @@ extension SlangDictionary {
 
             SlangEntry(concept: "outfit", mappings: [
                 .newGen: ["fit", "outfit"],
-                .boomer: ["atuendo", "vestimenta", "conjunto"]
+                .boomer: ["la ropa", "el look", "lo que lleva"]
             ]),
             SlangEntry(concept: "very_pretty", mappings: [
                 .newGen: ["coquette", "demure"],
-                .boomer: ["elegante", "con clase"]
+                .boomer: ["muy femenino", "elegante"]
             ]),
 
             // ============================
@@ -525,11 +525,11 @@ extension SlangDictionary {
 
             SlangEntry(concept: "exclamation_surprise", mappings: [
                 .newGen: ["gyatt", "dou"],
-                .boomer: ["caramba", "santo cielo"]
+                .boomer: ["anda", "madre mia"]
             ]),
             SlangEntry(concept: "absurd_content", mappings: [
                 .newGen: ["skibidi"],
-                .boomer: ["tonteria", "disparate"]
+                .boomer: ["tonteria", "absurdo"]
             ]),
             SlangEntry(concept: "weird_place", mappings: [
                 .newGen: ["only in Ohio"],
