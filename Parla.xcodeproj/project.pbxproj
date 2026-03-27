@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C44E3B8AA2F484CF48FBBC /* Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4BD2FF0E10A40F0C9EAD06 /* Generation.swift */; };
+		08D33F7241CAD6ECF0EBB2C4 /* SlangDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7425A46C7B6359F019AD2F30 /* SlangDictionary.swift */; };
+		0979AB28F2A4E56AA2610E78 /* SwapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B56A0036A6E05028463D2F61 /* SwapButton.swift */; };
+		15FAB72B23C8C818857A2E5D /* TranslationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E275882FF016F2595F0DB99 /* TranslationEngine.swift */; };
+		20583D88CF8DE93CC757A7CF /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BE435D5CC885C220E64075 /* AppTheme.swift */; };
+		2183F2052838079E9420914A /* GeminiSystemPrompt.txt in Resources */ = {isa = PBXBuildFile; fileRef = A8BC53AC5B1BFF1C15C7C96C /* GeminiSystemPrompt.txt */; };
+		22D4A49063BCFD26C2044A95 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B0184235991A4D99DB6D3A /* SplashView.swift */; };
+		25E187EF1D37576C2EEA410A /* TranslationExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874B972318B519802B85193C /* TranslationExample.swift */; };
+		2723EB0D7D017A8E1E0BC69F /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4360FF1A2B40D8F54CF644C /* SpeechService.swift */; };
+		3168E7BED4CDC7E5DDE6F223 /* ExampleBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352E00399B60F6F22A43F80E /* ExampleBanner.swift */; };
+		3367839258E9E7D5DA04AE8E /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5531835F5CEAFB536AB414F1 /* WaveformView.swift */; };
+		4780501755F19D1DE21D8E1D /* OutputCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A3956DC3DE3A046D8A485D /* OutputCard.swift */; };
+		4F3C913B3CE785006ED106D2 /* GenerationSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF5AA3F8C72F83A15E175E0 /* GenerationSelector.swift */; };
+		5571B4EF070668CDEC50A6F7 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DDF538600C891EED1AF574B /* Secrets.plist */; };
+		6D55E332CA366D07FFB67083 /* SlangEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957429C0D70674013D8BA761 /* SlangEntry.swift */; };
+		8186F9FE17675064137D0518 /* TranslatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D0BEF0C6FA7A2F0CCA3D56 /* TranslatorViewModel.swift */; };
+		8C20395741F62D1715BEFBA7 /* TranslationCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93C55584B37E36CC20A2B97 /* TranslationCache.swift */; };
+		936CE6556243078EEAED3785 /* ParlaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E220F6F9D026DC5E4845EEE9 /* ParlaApp.swift */; };
+		985198ABD28A3D06B487A45C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3FD2F322E295A1EEBA9520 /* Assets.xcassets */; };
+		9AA30421067E318847DA9FF3 /* TranslatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218599998E2E5640EE0A237B /* TranslatorView.swift */; };
+		A90D3DB1B4F19DB119508F18 /* GeminiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB905336212F2B7F11DFA370 /* GeminiService.swift */; };
+		BEC8C20521FCB189D56D769E /* InputCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C647445AE46DAF9EF3FCD16 /* InputCard.swift */; };
+		E94057FF5A6681AA7B7C1533 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78FDB8CFBD0A9A8A200556E9 /* RecordButton.swift */; };
+		FBCBA14D612E58257E20C902 /* PrecachedTranslations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B01FBC695C424042F7DDDCD /* PrecachedTranslations.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1C647445AE46DAF9EF3FCD16 /* InputCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCard.swift; sourceTree = "<group>"; };
+		218599998E2E5640EE0A237B /* TranslatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorView.swift; sourceTree = "<group>"; };
+		2A3FD2F322E295A1EEBA9520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2A4BD2FF0E10A40F0C9EAD06 /* Generation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generation.swift; sourceTree = "<group>"; };
+		352E00399B60F6F22A43F80E /* ExampleBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleBanner.swift; sourceTree = "<group>"; };
+		3DDF538600C891EED1AF574B /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Secrets.plist; sourceTree = "<group>"; };
+		52A3956DC3DE3A046D8A485D /* OutputCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutputCard.swift; sourceTree = "<group>"; };
+		5531835F5CEAFB536AB414F1 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		565D533E2B81F1F57E6AC2FE /* Parla.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Parla.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B01FBC695C424042F7DDDCD /* PrecachedTranslations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PrecachedTranslations.json; sourceTree = "<group>"; };
+		71BE435D5CC885C220E64075 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		7425A46C7B6359F019AD2F30 /* SlangDictionary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlangDictionary.swift; sourceTree = "<group>"; };
+		78FDB8CFBD0A9A8A200556E9 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		7E275882FF016F2595F0DB99 /* TranslationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationEngine.swift; sourceTree = "<group>"; };
+		874B972318B519802B85193C /* TranslationExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationExample.swift; sourceTree = "<group>"; };
+		89D0BEF0C6FA7A2F0CCA3D56 /* TranslatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorViewModel.swift; sourceTree = "<group>"; };
+		957429C0D70674013D8BA761 /* SlangEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlangEntry.swift; sourceTree = "<group>"; };
+		A8BC53AC5B1BFF1C15C7C96C /* GeminiSystemPrompt.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = GeminiSystemPrompt.txt; sourceTree = "<group>"; };
+		B56A0036A6E05028463D2F61 /* SwapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapButton.swift; sourceTree = "<group>"; };
+		BB905336212F2B7F11DFA370 /* GeminiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiService.swift; sourceTree = "<group>"; };
+		C1B0184235991A4D99DB6D3A /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		C93C55584B37E36CC20A2B97 /* TranslationCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationCache.swift; sourceTree = "<group>"; };
+		CBF5AA3F8C72F83A15E175E0 /* GenerationSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerationSelector.swift; sourceTree = "<group>"; };
+		D4360FF1A2B40D8F54CF644C /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		E220F6F9D026DC5E4845EEE9 /* ParlaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParlaApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1F35A29A09AFCE3BC04243AB /* Parla */ = {
+			isa = PBXGroup;
+			children = (
+				3DDF538600C891EED1AF574B /* Secrets.plist */,
+				40FD134DA317A3C760FB88C7 /* App */,
+				AD40DA10F9E1BD124CD66B25 /* Models */,
+				ED7F633203A737391DEAD93C /* Resources */,
+				49581D36BB711861B5B8568E /* Services */,
+				E6E51D6BC670971D2EA516E4 /* Theme */,
+				72255EAE83838848ABDFC79B /* ViewModels */,
+				4F259B344AE6D66D1DD830D4 /* Views */,
+			);
+			path = Parla;
+			sourceTree = "<group>";
+		};
+		40FD134DA317A3C760FB88C7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E220F6F9D026DC5E4845EEE9 /* ParlaApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		49581D36BB711861B5B8568E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				BB905336212F2B7F11DFA370 /* GeminiService.swift */,
+				7425A46C7B6359F019AD2F30 /* SlangDictionary.swift */,
+				D4360FF1A2B40D8F54CF644C /* SpeechService.swift */,
+				C93C55584B37E36CC20A2B97 /* TranslationCache.swift */,
+				7E275882FF016F2595F0DB99 /* TranslationEngine.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4F259B344AE6D66D1DD830D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C1B0184235991A4D99DB6D3A /* SplashView.swift */,
+				218599998E2E5640EE0A237B /* TranslatorView.swift */,
+				BCF4ADDA71BC785335DF67A3 /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		72255EAE83838848ABDFC79B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				89D0BEF0C6FA7A2F0CCA3D56 /* TranslatorViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8BF03DFF92BB893FEA842546 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				565D533E2B81F1F57E6AC2FE /* Parla.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A92E4CD110C8108498F1DDCF = {
+			isa = PBXGroup;
+			children = (
+				1F35A29A09AFCE3BC04243AB /* Parla */,
+				8BF03DFF92BB893FEA842546 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD40DA10F9E1BD124CD66B25 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A4BD2FF0E10A40F0C9EAD06 /* Generation.swift */,
+				957429C0D70674013D8BA761 /* SlangEntry.swift */,
+				874B972318B519802B85193C /* TranslationExample.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BCF4ADDA71BC785335DF67A3 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				352E00399B60F6F22A43F80E /* ExampleBanner.swift */,
+				CBF5AA3F8C72F83A15E175E0 /* GenerationSelector.swift */,
+				1C647445AE46DAF9EF3FCD16 /* InputCard.swift */,
+				52A3956DC3DE3A046D8A485D /* OutputCard.swift */,
+				78FDB8CFBD0A9A8A200556E9 /* RecordButton.swift */,
+				B56A0036A6E05028463D2F61 /* SwapButton.swift */,
+				5531835F5CEAFB536AB414F1 /* WaveformView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E6E51D6BC670971D2EA516E4 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				71BE435D5CC885C220E64075 /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		ED7F633203A737391DEAD93C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FD2F322E295A1EEBA9520 /* Assets.xcassets */,
+				A8BC53AC5B1BFF1C15C7C96C /* GeminiSystemPrompt.txt */,
+				5B01FBC695C424042F7DDDCD /* PrecachedTranslations.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EFB362CB5CFF545657219F4C /* Parla */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82E2F1C2519D186C207E031D /* Build configuration list for PBXNativeTarget "Parla" */;
+			buildPhases = (
+				3BE30CEB1E0F953E266A8BBB /* Sources */,
+				129F5432CAD8670B6447C7D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parla;
+			packageProductDependencies = (
+			);
+			productName = Parla;
+			productReference = 565D533E2B81F1F57E6AC2FE /* Parla.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		05BB93A5E99C99B886C382E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = AB82A12A6157517AE84C3CC1 /* Build configuration list for PBXProject "Parla" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A92E4CD110C8108498F1DDCF;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 8BF03DFF92BB893FEA842546 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EFB362CB5CFF545657219F4C /* Parla */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		129F5432CAD8670B6447C7D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985198ABD28A3D06B487A45C /* Assets.xcassets in Resources */,
+				2183F2052838079E9420914A /* GeminiSystemPrompt.txt in Resources */,
+				FBCBA14D612E58257E20C902 /* PrecachedTranslations.json in Resources */,
+				5571B4EF070668CDEC50A6F7 /* Secrets.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BE30CEB1E0F953E266A8BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20583D88CF8DE93CC757A7CF /* AppTheme.swift in Sources */,
+				3168E7BED4CDC7E5DDE6F223 /* ExampleBanner.swift in Sources */,
+				A90D3DB1B4F19DB119508F18 /* GeminiService.swift in Sources */,
+				07C44E3B8AA2F484CF48FBBC /* Generation.swift in Sources */,
+				4F3C913B3CE785006ED106D2 /* GenerationSelector.swift in Sources */,
+				BEC8C20521FCB189D56D769E /* InputCard.swift in Sources */,
+				4780501755F19D1DE21D8E1D /* OutputCard.swift in Sources */,
+				936CE6556243078EEAED3785 /* ParlaApp.swift in Sources */,
+				E94057FF5A6681AA7B7C1533 /* RecordButton.swift in Sources */,
+				08D33F7241CAD6ECF0EBB2C4 /* SlangDictionary.swift in Sources */,
+				6D55E332CA366D07FFB67083 /* SlangEntry.swift in Sources */,
+				2723EB0D7D017A8E1E0BC69F /* SpeechService.swift in Sources */,
+				22D4A49063BCFD26C2044A95 /* SplashView.swift in Sources */,
+				0979AB28F2A4E56AA2610E78 /* SwapButton.swift in Sources */,
+				8C20395741F62D1715BEFBA7 /* TranslationCache.swift in Sources */,
+				15FAB72B23C8C818857A2E5D /* TranslationEngine.swift in Sources */,
+				25E187EF1D37576C2EEA410A /* TranslationExample.swift in Sources */,
+				9AA30421067E318847DA9FF3 /* TranslatorView.swift in Sources */,
+				8186F9FE17675064137D0518 /* TranslatorViewModel.swift in Sources */,
+				3367839258E9E7D5DA04AE8E /* WaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		305747BD68D8A927F9023316 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		B3244E9BFBCA3A5EBEA7A56B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		CD3FF1D76FA3AD205923F0D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Parla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parla.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F25CF7572210549243733434 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Parla/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.parla.app;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		82E2F1C2519D186C207E031D /* Build configuration list for PBXNativeTarget "Parla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F25CF7572210549243733434 /* Debug */,
+				CD3FF1D76FA3AD205923F0D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AB82A12A6157517AE84C3CC1 /* Build configuration list for PBXProject "Parla" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305747BD68D8A927F9023316 /* Debug */,
+				B3244E9BFBCA3A5EBEA7A56B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 05BB93A5E99C99B886C382E4 /* Project object */;
+}
